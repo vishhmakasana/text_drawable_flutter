@@ -1,8 +1,8 @@
 name: text_drawable_flutter
-description: A new Flutter package.
+description: To be able to show text avatar of text initials like contact app.
 version: 0.0.1
-author:
-homepage:
+author: Vishal Makasana<vishal.makasana@hotmail.com>
+homepage: https://github.com/vishhmakasana/text_drawable_flutter
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
