@@ -6,7 +6,7 @@ import 'color_generator.dart';
 import 'contrast_helper.dart';
 
 class TextDrawable extends StatefulWidget {
-  /// The text supplied. Only first character will be displayed.
+  /// The text supplied.
   final String text;
 
   final int length;
