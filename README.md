@@ -2,7 +2,7 @@
 
 A Flutter package for displaying initials in circle avatar same like android text drawable library.
 
-![Screenshot](screenshot/ss.png)
+![Screenshot](https://raw.githubusercontent.com/vishhmakasana/text_drawable_flutter/1e037a69cdb726a3dde95cb4ba0559bd8fab7cbf/screenshot/ss.png)
 
 ## Import it
 
