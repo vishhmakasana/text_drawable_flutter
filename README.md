@@ -23,6 +23,7 @@ TextDrawable(
 | Property | Type | Description |
 | :--- | :---: | :--- |
 | `text` | String | The full text you wish to display the initials for. Only the ```length``` initials will be displayed. |
+| `length` | int | The length of how many initials will be shown? |
 | `height` | double | Height of the `TextDrawable` widget. |
 | `width` | double | Width of the `TextDrawable` widget. Defaults to 48. |
 | `backgroundColor` | Color | Background color to for the widget. If not specified, a random color will be generated. |
