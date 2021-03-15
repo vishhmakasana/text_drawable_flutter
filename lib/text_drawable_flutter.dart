@@ -32,6 +32,9 @@ class TextDrawable extends StatefulWidget {
   /// Only specify this if `boxShape == BoxShape.circle`.
   final BorderRadiusGeometry borderRadius;
 
+  /// Padding of the widget default is 8.
+  final EdgeInsetsGeometry padding;
+
   /// Creates a customizable [TextDrawable] widget.
   TextDrawable({
     Key key,
@@ -43,6 +46,7 @@ class TextDrawable extends StatefulWidget {
     this.backgroundColor,
     this.boxShape = BoxShape.circle,
     this.borderRadius,
+    this.padding = const EdgeInsets.all(8),
   }) : super(key: key) {
     assert(
       boxShape == BoxShape.rectangle || borderRadius == null,
@@ -78,22 +82,23 @@ class _TextDrawableState extends State<TextDrawable> {
 
     return Container(
       alignment: Alignment.center,
-      height: widget.height,
-      width: widget.width,
       decoration: BoxDecoration(
         color: backgroundColor,
         shape: widget.boxShape,
         borderRadius: widget.borderRadius,
       ),
-      child: Text(
-        getInitials(),
-        style: widget.textStyle?.copyWith(
-              color: contrast > 1.8 ? Colors.white : Colors.black,
-            ) ??
-            TextStyle(
-              fontSize: 18,
-              color: contrast > 1.8 ? Colors.white : Colors.black,
-            ),
+      child: Padding(
+        padding: widget.padding,
+        child: Text(
+          getInitials(),
+          style: widget.textStyle?.copyWith(
+                color: contrast > 1.8 ? Colors.white : Colors.black,
+              ) ??
+              TextStyle(
+                fontSize: 18,
+                color: contrast > 1.8 ? Colors.white : Colors.black,
+              ),
+        ),
       ),
     );
   }
