@@ -1,7 +1,7 @@
 name: text_drawable_flutter
 description: To be able to show text avatar of text initials like contact app.
 version: 0.0.1
-author: Vishal Makasana<vishal.makasana@hotmail.com>
+#author: Vishal Makasana<vishal.makasana@hotmail.com>   -->deprecated
 homepage: https://github.com/vishhmakasana/text_drawable_flutter
 
 environment:
